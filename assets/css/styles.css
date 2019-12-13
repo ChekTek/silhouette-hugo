@@ -221,3 +221,7 @@ blockquote::before {
     left: 10px;
     top: -10px;
 }
+
+.main img {
+    max-width: 100%;
+}
