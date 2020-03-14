@@ -76,7 +76,7 @@ footer,
 }
 
 footer {
-    background-color: #27343c;
+    background-color: #4d5966;
     color: #fff3e4;
     font-size: .8rem;
     padding: 30px 30px;
@@ -90,7 +90,7 @@ footer h5 {
 
 footer h5,
 footer a {
-    color: #e3d096 !important;
+    color: #e3d096;
 }
 
 footer .icons a {
