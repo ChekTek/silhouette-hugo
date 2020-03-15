@@ -2,7 +2,7 @@
     {{ partial "head-meta" . }}
 
     {{ with .Param "featureImage" }}
-    <style type="text/css">
+    <style>
         .feature-image {
             background-image: url("{{ . | absURL | safeCSS}}");
             height: 500px;

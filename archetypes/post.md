@@ -1,11 +1,16 @@
 ---
+type: "post"
 title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-draft: true
+publishdate: {{ .Date }}
+lastmod: {{ .Date }}
 categories:
-  - Software Development
+  - Uncategorized
 tags:
   - Untagged
+url: "/posts/no-url"
+featureImage: ""
+comments: true
+draft: true
 ---
 
 **Insert Lead paragraph here.**
