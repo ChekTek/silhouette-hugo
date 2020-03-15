@@ -227,3 +227,186 @@ blockquote::before {
     margin: 0 auto;
     display: block;
 }
+
+/* Added Later... Sort which should move to site */
+h2:hover{
+    color: #434a52;
+  }
+  
+  html,nav{
+    min-width: 316px;
+  }
+  
+  .orange{
+    color: #F49F00;
+  }
+  
+  footer {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    margin-top: 10px !important;
+  }
+  
+  footer.footer h5,
+  footer.footer a,
+  footer .fab,
+  footer .fas {
+    color: white;
+  }
+  
+  h2 {
+    margin-top: 25px;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+    margin-top: 25px;
+    color: slategray;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  .share-icons .fab,
+  .share-icons .fa {
+    color: white !important;
+  }
+  .share-icons small {
+    color: #4d5966;
+  }
+  .share-icons .fa-circle {
+    color: #4d5966;
+  }
+  .share-icons a {
+    padding-bottom: 5px !important;
+    padding-top: 20px !important;
+  }
+  
+  .share-icons a:hover * {
+    color: #289;
+  }
+  
+  footer a:hover *{
+    color: lightblue !important;
+    stroke: lightblue;
+  
+  }
+  
+  .footer-justification {
+    justify-content: space-around;
+  }
+  /** adjusts the footer social media icons so they are centered when they wrap*/
+  @media screen and (min-width: 405px) {
+    .footer-justification {
+      justify-content: space-between;
+    }
+  
+    img[alt^="Small Image"] {
+      width: 50%;
+    }
+  }
+  
+  /*theme for code snippets*/
+  /* pre {
+    background-color: #4d5966 !important;
+  } */
+  
+  .main-content img {
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
+  
+  #privacy {
+    position: fixed;
+    background-color: #4d5966;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 440px;
+    text-align: center;
+    font-size: 11px;
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.75);
+    color: white;
+    opacity: 0.85;
+  }
+  #privacy-message {
+    vertical-align: middle;
+  }
+  #privacy-close {
+    font-weight: bold;
+    font-size: 15px;
+    vertical-align: middle;
+    margin-left: 15px;
+    cursor: pointer;
+    color: rgb(158, 60, 60);
+  }
+  
+  #mini-links {
+    font-size: 11px;
+    padding:10px;
+    text-align: center;
+  }
+  
+  #nav-icon-container svg:hover{
+    stroke: lightblue;
+  }
+  
+  #profile-container{
+    margin-top: 10px;
+    min-height: 240px;
+  }
+  
+  #profile-pic{
+    margin-right: 10px;
+    float: left;
+    border-radius: 50%;
+    border: 10px lightgray;
+    border-top-right-radius: 7%;
+    border-style: solid;
+  }
+  
+  @media (max-width: 576px){
+    #profile-pic{
+      width:30%;
+    }
+  }
+  
+  @media (max-width: 350px){
+    #profile-pic{
+      width:50%;
+    }
+  }
+  
+  .two-columns{
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+  
+  #about-main{
+    display: flex;
+  }
+  
+  #about-main li{
+    white-space: nowrap;
+  }
+  
+  #tweet-container{
+    flex:1;
+  }
+  
+  #link-container{
+    flex:1;
+  }
+  
+  @media (max-width: 470px){
+    #about-main{
+      flex-direction: column;
+    }
+  }

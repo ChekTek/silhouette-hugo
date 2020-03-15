@@ -1,10 +1,10 @@
 {{ define "head" }}
     {{ partial "head-meta" . }}
 
-    {{ with .Param "featureImage" }}
+    <!-- {{ with .Param "featureImage" }}
     <style>
         .feature-image {
-            background-image: url("{{ . | absURL | safeCSS}}");
+            background-image: url("{{ . }}");
             height: 500px;
         }
 
@@ -26,7 +26,7 @@
             }
         }
     </style>
-    {{ end }}
+    {{ end }} -->
 {{ end }}
 {{ define "title" }}
   {{ .Title }} | {{ .Site.Title }}
@@ -39,11 +39,7 @@
 <div class="container mt-4 post">
     <h1>{{ .Title }}</h1>
     {{ partial "post-meta" . }}
-
-    <div class="share-icons d-flex justify-content-center d-print-none">
-        {{ partial "share-icons" . }}
-    </div>
-
+    
     <div class="mt-4 mb-4 main-content">
         {{ .Content }}
 
@@ -51,8 +47,7 @@
             {{ partial "share-icons" . }}
         </div>
     </div>
-
-    {{ template "_internal/disqus.html" . }}
+    <div class="commentbox"></div>
 </div>
 {{ partial "sidebar" . }}
 {{ end }}
