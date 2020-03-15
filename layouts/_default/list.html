@@ -94,17 +94,18 @@
         <a class="title" href="{{ .Permalink }}"><h2>{{ .Title }}</h2></a>
         {{ partial "post-meta" . }}
         <div>
-          <a href="{{ .Permalink }}">
+          <!-- feature image -->
+          {{$url := .Param "url"}}
+          {{$image := .Param "featureImage"}}
+          {{ with .Param "featureImage" }}
+          <a href="{{ $url }}">
           <div class="mb-3" style="max-height:14rem; overflow: hidden;">
-            <!-- feature image -->
-            {{$url := .Param "url"}}
-            {{$image := .Param "featureImage"}}
-            {{ with .Param "featureImage" }}
             <img src="{{ $url  }}/{{ $image }}" style="margin-top:-15%;" />
-            {{end}}
-            <!-- end feature image -->
           </div>
         </a>
+        {{end}}
+          <!-- end feature image -->
+
           <div>
             {{ .Summary }}
         </div>
