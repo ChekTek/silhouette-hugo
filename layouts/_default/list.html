@@ -99,9 +99,11 @@
           {{$image := .Param "featureImage"}}
           {{ with .Param "featureImage" }}
           <a href="{{ $url }}">
-          <div class="mb-3" style="max-height:14rem; overflow: hidden;">
-            <img src="{{ $url  }}/{{ $image }}" style="margin-top:-15%;" />
-          </div>
+            <div class="feature-image-container mb-3">
+              <div>
+                <img src="{{ $url  }}/{{ $image }}" />
+              </div>
+            </div>
         </a>
         {{end}}
           <!-- end feature image -->

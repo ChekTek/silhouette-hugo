@@ -171,9 +171,17 @@ footer hr {
 
 .feature-image-text {
   max-width: 760px;
-
   margin-right: auto;
   margin-left: auto;
+}
+
+.feature-image-container {
+  max-height: 14rem;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
 .white-shadow-text {
