@@ -272,6 +272,9 @@ footer {
     padding-top: 5px !important;
     padding-bottom: 5px !important;
     margin-top: 10px !important;
+    -webkit-box-shadow: 2px 20px 39px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 20px 39px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 20px 39px 0px rgba(0,0,0,0.75);
 }
 
 footer.footer h5,
